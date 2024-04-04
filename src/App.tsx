@@ -1,6 +1,6 @@
 import React from 'react';
 
-import StackNavigator from '../StackNavigator';
+import StackNavigator from './router/StackNavigator';
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthProvider } from './components/hooks/useAuth';
 
