@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "619590023313",
+    "project_id": "tinderc-reactnative",
+    "storage_bucket": "tinderc-reactnative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619590023313:android:7d574716a79eb1825da730",
+        "android_client_info": {
+          "package_name": "com.tinderclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF3-yZ0uDS5Oqi9arxCM66NnHwknFPHP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

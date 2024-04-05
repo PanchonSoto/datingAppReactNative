@@ -1,10 +1,10 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import ChatScreen from './src/components/screens/ChatScreen';
-import HomeScreen from './src/components/screens/HomeScreen';
-import LoginScreen from './src/components/screens/LoginScreen';
-import useAuth from './src/components/hooks/useAuth';
+import ChatScreen from '../components/screens/ChatScreen';
+import HomeScreen from '../components/screens/HomeScreen';
+import LoginScreen from '../components/screens/LoginScreen';
+import useAuth from '../components/hooks/useAuth';
 
 const Stack = createNativeStackNavigator();
 
