@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react'
+import React, { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import { NavigationContainerProps } from '@react-navigation/native';
 
 import auth, { FirebaseAuthTypes }  from '@react-native-firebase/auth';
@@ -81,14 +81,17 @@ export const AuthProvider = ({ children }:NavigationContainerProps) => {
     }
   }
 
+  const memoedValue = useMemo(()=>({
+    user:user, 
+    loading ,
+    error,
+    onGoogleButtonPress,
+    logout
+
+  }),[user, loading, error]);
+
   return (
-    <AuthContext.Provider 
-     value={{ 
-      user:user, 
-      loading ,
-      error,
-      onGoogleButtonPress,
-      logout }}>
+    <AuthContext.Provider value={ memoedValue }>
       { !loadingInitial && children }
     </AuthContext.Provider>
   )
